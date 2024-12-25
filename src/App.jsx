@@ -18,6 +18,7 @@ const App = () => {
     if (newTask.trim() === "") return;
     
     // Add new task to tasks state
+  
     setTasks([...tasks, { id: Date.now(), text: newTask, completed: false }]);
     
     // Reset new task text
@@ -67,7 +68,8 @@ const App = () => {
         <button onClick={addTask}>Add</button>
       </div>
       
-      {/* ToDoList component with tasks and event handlers */}
+      {/* ToDoList component with tasks and event handlers, props */}
+     
       <ToDoList
         tasks={tasks}
         handleComplete={completeTask}
