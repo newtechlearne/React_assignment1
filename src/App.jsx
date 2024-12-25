@@ -4,7 +4,8 @@ import ToDoList from "./components/ToDoList";
 import "./App.css";
 
 const App = () => {
-  // State to store tasks
+
+// State to store tasks with an initial empty array
   const [tasks, setTasks] = useState([]);
   
   // State to store new task text
