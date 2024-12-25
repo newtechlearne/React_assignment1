@@ -8,7 +8,8 @@ const App = () => {
 // State to store tasks with an initial empty array
   const [tasks, setTasks] = useState([]);
   
-  // State to store new task text
+
+// State to store new task text with an initial empty string to allow user input
   const [newTask, setNewTask] = useState("");
 
   // Function to add new task
